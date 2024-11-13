@@ -165,11 +165,15 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .work-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .work-card img {
@@ -178,8 +182,17 @@ body {
     object-fit: cover;
 }
 
-.work-card h3, .work-card p {
-    padding: 1rem;
+.work-card h3, 
+.work-card p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.read-more {
+    display: block;
+    padding: 0 20px 20px;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 .impact-report {
@@ -405,4 +418,31 @@ body {
     height: 50px;
     width: auto;
     display: block;
+}
+
+/* Logo container for both logos */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between logos */
+}
+
+/* Main logo */
+.main-logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+/* Flag logo */
+.flag-logo img {
+    height: 35px; /* Adjust as needed */
+    width: auto;
+    display: block;
+}
+
+/* Optional: Add separator line between logos */
+.flag-logo {
+    padding-left: 15px;
+    border-left: 1px solid #e0e0e0;
 }
