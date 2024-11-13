@@ -51,8 +51,39 @@
     padding: 20px;
 }
 
+.article-content h2 {
+    margin: 0 0 15px 0;
+    color: var(--primary-color);
+}
+
+.article-content h3 {
+    margin: 0 0 10px 0;
+    color: var(--primary-color);
+}
+
+.article-preview {
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+}
+
+.read-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover {
+    transform: translateX(5px);
+}
+
 @media (max-width: 768px) {
     .article-card.featured {
         grid-template-columns: 1fr;
+    }
+    
+    .article-image img {
+        height: 200px;
     }
 } 

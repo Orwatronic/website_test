@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #0066cc;
-    --secondary-color: #ffffff;
+    --primary-color: #007bff;
+    --secondary-color: #f8f9fa;
     --text-color: #333333;
     --accent-color: #ff6b6b;
 }
@@ -424,7 +424,7 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 15px; /* Space between logos */
+    gap: 30px; /* Space between logos */
 }
 
 /* Main logo */
